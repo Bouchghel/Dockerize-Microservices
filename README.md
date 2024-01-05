@@ -21,3 +21,18 @@ Pour éviter d'avoir à lancer les commandes : docker build, docker run à chaqu
 ![microServices](https://github.com/Bouchghel/Dockerize-Microservices/assets/93221225/1c299dc1-2254-410d-8a32-6d5871ad15eb)  
 ![Cap](https://github.com/Bouchghel/Dockerize-Microservices/assets/93221225/7fdb4c2e-55a0-46cf-ad80-4e3080a71408)
 
+### Passant maintenant a la partie FrontEnd
+Premierement c'est de generer le build :  
+On a integrer cette etape directement dans le Dockerfile :  
+![Dockerfile FrontEnd](DockerfileAngular.PNG)  
+
+#### Automatiser le process de docker build , docker run  :  
+en modifiant DockerCompose.yml :  
+![DockerComposeFront](<DockerCompose.yml FrontEnd.PNG>)  
+
+### Pour lancer l'app :  
+   ```bash
+   docker compose up -d --build
+
+
+
